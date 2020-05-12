@@ -86,6 +86,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataAccess\SolutionProjectReferenceData.cs" />
+    <Compile Include="Model\TypeConverters\AutoMapperCompatibilityExtensions.cs" />
+    <Compile Include="Model\TypeConverters\NullStringConverter.cs" />
+    <Compile Include="Model\TypeConverters\VersionStringConverter.cs" />
     <Compile Include="ViewModels\IShell.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="App.xaml.cs">
@@ -96,7 +100,7 @@
     <Compile Include="DataAccess\ProjectAssemblyData.cs" />
     <Compile Include="DataAccess\ProjectData.cs" />
     <Compile Include="DataAccess\ProjectFileData.cs" />
-    <Compile Include="DataAccess\ReferenceData.cs" />
+    <Compile Include="DataAccess\LibraryReferenceData.cs" />
     <Compile Include="DataAccess\SolutionData.cs" />
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>

@@ -95,7 +95,7 @@
                 {
                     using (var projectStream = File.OpenRead(projectPath))
                     {
-                        actual.Projects.Add(sut.ParseProject(projectFile, projectStream).Result);
+                        actual.Projects.Add(sut.ParseProject(projectFile, actual, projectStream).Result);
                     }
                 }
                 catch (Exception ex)

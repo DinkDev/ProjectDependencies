@@ -5,7 +5,7 @@
     using System.Diagnostics;
 
     [DebuggerDisplay("Name = {Name}, Version = {Version}")]
-    public class ReferenceData
+    public class LibraryReferenceData
     {
         /// <summary>
         /// Assembly name.

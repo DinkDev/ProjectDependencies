@@ -4,10 +4,10 @@
     using System.Collections.Generic;
     using System.Diagnostics;
 
-    [DebuggerDisplay("Name = {SolutionName}, Version = {VisualStudioVersion}")]
+    [DebuggerDisplay("Name = {Name}, Version = {VisualStudioVersion}")]
     public class SolutionData
     {
-        public string SolutionName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
         public string SolutionFullPath { get; set; } = string.Empty;
         public Version VisualStudioVersion { get; set; } = new Version(0, 0, 0, 0);
         public List<ProjectFileData> ProjectFiles { get; set; } = new List<ProjectFileData>();

@@ -1,7 +1,6 @@
 ﻿namespace ProjectDependencies.Model
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
@@ -10,6 +9,7 @@
     using ByteDev.DotNet.Project;
     using ByteDev.DotNet.Solution;
     using DataAccess;
+    using TypeConverters;
 
     public class SolutionParser
     {
@@ -25,8 +25,11 @@
             _projectReader = projectReader ?? throw new ArgumentNullException(nameof(projectReader));
             _mapperConfig = new MapperConfiguration(cfg =>
             {
+                cfg.CreateMap<string, string>().ConvertUsing<NullStringConverter>();
+                cfg.CreateMap<string, Version>().ConvertUsing<VersionStringConverter>();
+
                 cfg.CreateMap<Tuple<string, DotNetSolution>, SolutionData>()
-                    .ForMember(dest => dest.SolutionName, opt => opt.MapFrom(src => Path.GetFileNameWithoutExtension(src.Item1)))
+                    .ForMember(dest => dest.Name, opt => opt.MapFrom(src => Path.GetFileNameWithoutExtension(src.Item1)))
                     .ForMember(dest => dest.SolutionFullPath, opt => opt.MapFrom(src => Path.GetFullPath(src.Item1)))
                     .ForMember(dest => dest.VisualStudioVersion, opt => opt.MapFrom(src => Version.Parse(src.Item2.VisualStudioVersion)))
                     .ForMember(dest => dest.ProjectFiles, opt => opt.MapFrom(src => src.Item2.Projects.Where(p => p.Path.EndsWith(@".csproj", StringComparison.OrdinalIgnoreCase)).ToList()));
@@ -36,22 +39,26 @@
                     .ForMember(dest => dest.Path, opt => opt.MapFrom(src => src.Path))
                     .ForMember(dest => dest.Guid, opt => opt.MapFrom(src => src.Id));
 
-                cfg.CreateMap<Tuple<ProjectFileData, DotNetProject>, ProjectData>()
-                    .ForMember(dest => dest.FileData, opt => opt.MapFrom(src => src.Item1))
-                    .ForMember(dest => dest.AssemblyInfo, opt => opt.MapFrom(src => src.Item2.AssemblyInfo))
-                    .ForMember(dest => dest.ProjectReferencePaths,
-                        opt => opt.MapFrom(src => src.Item2.ProjectReferences.Select(r => r.FilePath).ToList()))
-
-                    //;
-
-                    .ForMember(dest => dest.ReferencedLibraries,
-                        opt => opt.MapFrom(src => src.Item2.References.Select(r => r).ToList()));
+                cfg.CreateMap<Tuple<SolutionData, ProjectFileData, DotNetProject>, ProjectData>()
+                    .ForMember(dest => dest.FileData, opt => opt.MapFrom(src => src.Item2))
+                    .ForMember(dest => dest.AssemblyInfo, opt => opt.MapFrom(src => src.Item3.AssemblyInfo))
+                    .ForMember(dest => dest.SolutionProjectReferences,
+                        opt => opt.ResolveUsing(src =>
+                        {
+                            return src.Item3.ProjectReferences.Select(r => new SolutionProjectReferenceData
+                            {
+                                Name = Path.GetFileNameWithoutExtension(r.FilePath),
+                                SolutionName = src.Item1.Name,
+                                ProjectPath = Path.Combine(Path.GetFullPath(src.Item2.Path), r.FilePath)
+                            });
+                        }))
+                    .ForMember(dest => dest.LibraryReferences,
+                        opt => opt.MapFrom(src => src.Item3.References.Select(r => r).ToList()));
 
                 cfg.CreateMap<AssemblyInfoProperties, ProjectAssemblyData>();
 
-                cfg.CreateMap<Reference, ReferenceData>()
-                    .ForMember(dest => dest.Aliases, opt => opt.MapFrom(src => new List<string>(src.Aliases)))
-                    .ForMember(dest => dest.Version, opt => opt.MapFrom(src => Version.Parse(src.Version)));
+                cfg.CreateMap<Reference, LibraryReferenceData>();
+
             });
         }
 
@@ -69,7 +76,7 @@
             }
         }
 
-        public async Task<ProjectData> ParseProject(ProjectFileData fileData, FileStream projectStream)
+        public async Task<ProjectData> ParseProject(ProjectFileData projectFile, SolutionData solution, FileStream projectStream)
         {
             using (var reader = new StreamReader(projectStream))
             {
@@ -80,7 +87,7 @@
 
                 var mapper = _mapperConfig.CreateMapper();
 
-                return mapper.Map<ProjectData>(Tuple.Create(fileData, projectObject));
+                return mapper.Map<ProjectData>(Tuple.Create(solution, projectFile, projectObject));
             }
         }
     }
