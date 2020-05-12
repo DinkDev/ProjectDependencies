@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87F686BF-5A56-4723-A79E-E50E221EF153}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDSXMLBuilder</RootNamespace>
+    <AssemblyName>IDSXMLBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>RocketSvnScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisRuleSet>..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Merlin.Common">
+      <HintPath>..\ExternalDependencies\Merlin.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\ExternalDependencies\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PrimeOCRXML">
+      <HintPath>..\ExternalDependencies\PrimeOCRXML.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\C4IPIDS.cs" />
+    <Compile Include="Class\CConfidence.cs" />
+    <Compile Include="Class\CFormTag.cs" />
+    <Compile Include="Class\CHeading.cs" />
+    <Compile Include="Class\CIDSGenerateXML.cs" />
+    <Compile Include="Class\CProcessXML.cs" />
+    <Compile Include="Class\CTableData.cs" />
+    <Compile Include="Class\CTableDataCell.cs" />
+    <Compile Include="Class\CTableRow.cs" />
+    <Compile Include="Class\CTableTag.cs" />
+    <Compile Include="Class\CTextInput.cs" />
+    <Compile Include="Class\CUtility.cs" />
+    <Compile Include="Interface\IConfidence.cs" />
+    <Compile Include="Interface\IFormTag.cs" />
+    <Compile Include="Interface\IHeading.cs" />
+    <Compile Include="Interface\IIDSGenerateXML.cs" />
+    <Compile Include="Interface\IProcessXML.cs" />
+    <Compile Include="Interface\ITableData.cs" />
+    <Compile Include="Interface\ITableDataCell.cs" />
+    <Compile Include="Interface\ITableRow.cs" />
+    <Compile Include="Interface\ITableTag.cs" />
+    <Compile Include="Interface\ITextInput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AttributeConfidenceLib\AttributeConfidenceLib.csproj">
+      <Project>{c87678ef-b0a0-4887-8815-407e930c14e9}</Project>
+      <Name>AttributeConfidenceLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormAnalysis\FormAnalysis.csproj">
+      <Project>{70ebdbd3-e842-4bca-a03b-36887747f7c9}</Project>
+      <Name>FormAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransformLib\TransformLib.csproj">
+      <Project>{4f81a9f9-7557-4cab-bbf6-91a166d11551}</Project>
+      <Name>TransformLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

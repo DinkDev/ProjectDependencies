@@ -2,13 +2,17 @@
 {
     using System;
     using System.IO;
+    using ApprovalTests;
+    using ApprovalTests.Reporters;
     using ByteDev.DotNet.Project;
     using ByteDev.DotNet.Solution;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Newtonsoft.Json;
     using ProjectDependencies.DataAccess;
     using ProjectDependencies.Model;
 
     [TestClass]
+    [UseReporter(typeof(BeyondCompareReporter))]
     public class SolutionParsingTests
     {
         public TestContext TestContext { get; set; }
@@ -16,7 +20,8 @@
         [TestMethod]
         public void Learning_ByteDevDotNet_SolutionParsing_Test1()
         {
-            var solutionFile = @"C:\Git\MerlinTransform2016\MerlinTransformSolution.sln";
+            var settings = new TestParserSettings();
+            var solutionFile = @"TestFiles\\MerlinTransformSolution.txt";
             var solutionPath = Path.GetDirectoryName(Path.GetFullPath(solutionFile))
                                ?? throw new NullReferenceException(@"Path.GetDirectoryName(Path.GetFullPath(solutionFile)) result is null");
 
@@ -28,7 +33,7 @@
 
                 TestContext.WriteLine("Project: {0}", projectFile);
 
-                if (projectFile.EndsWith("csproj", StringComparison.OrdinalIgnoreCase))
+                if (projectFile.EndsWith(settings.ProjectFileExtension, StringComparison.OrdinalIgnoreCase))
                 {
                     var project = DotNetProject.Load(projectFile);
                     TestContext.WriteLine("Project References:");
@@ -65,10 +70,12 @@
         [TestMethod]
         public void SolutionParser_Test1()
         {
-            var solutionFile = @"C:\Git\MerlinTransform2016\MerlinTransformSolution.sln";
+            var solutionFile = @"TestFiles\\MerlinTransformSolution.txt";
+            var settings = new TestParserSettings();
             var sut = new SolutionParser(
                 s => new DotNetSolution(s),
-                x => new DotNetProject(x));
+                x => new DotNetProject(x),
+                settings);
 
             SolutionData actual;
 
@@ -85,27 +92,24 @@
                 throw;
             }
 
-            var basePath = Path.GetDirectoryName(solutionFile);
-
             foreach (var projectFile in actual.ProjectFiles)
             {
-                var projectPath = Path.Combine(basePath, projectFile.Path);
-
                 try
                 {
-                    using (var projectStream = File.OpenRead(projectPath))
+                    using (var projectStream = File.OpenRead(projectFile.ProjectPath))
                     {
                         actual.Projects.Add(sut.ParseProject(projectFile, actual, projectStream).Result);
                     }
                 }
                 catch (Exception ex)
                 {
-                    TestContext.WriteLine("Error {0} while reading file {1}", ex, projectPath);
+                    TestContext.WriteLine("Error {0} while reading file {1}", ex, projectFile.ProjectPath);
                     throw;
                 }
             }
 
-            Assert.IsNotNull(actual);
+            var json = JsonConvert.SerializeObject(actual);
+            Approvals.VerifyJson(json);
         }
     }
 }
