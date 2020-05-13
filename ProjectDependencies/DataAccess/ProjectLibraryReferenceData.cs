@@ -1,12 +1,14 @@
 ﻿namespace ProjectDependencies.DataAccess
 {
-    using System;
     using System.Collections.Generic;
     using System.Diagnostics;
 
     [DebuggerDisplay("Name = {Name}, Version = {Version}")]
-    public class LibraryReferenceData
+    public class ProjectLibraryReferenceData
     {
+        public long ProjectLibraryReferenceDataId { get; set; }
+
+
         /// <summary>
         /// Assembly name.
         /// </summary>
@@ -15,7 +17,7 @@
         /// <summary>
         /// Assembly version number. Typically in: (Major).(Minor).(Patch) format. 
         /// </summary>
-        public Version Version { get; set; } = new Version(0, 0, 0, 0);
+        public virtual VersionData Version { get; set; } = new VersionData(0, 0, 0, 0);
 
         /// <summary>
         /// Assembly culture.
@@ -40,7 +42,7 @@
         /// <summary>
         /// Any aliases for the reference.
         /// </summary>
-        public List<string> Aliases { get; internal set; } = new List<string>();
+        public virtual ICollection<string> Aliases { get; set; } = new List<string>();
 
         /// <summary>
         /// Specifies whether the reference should be copied to the output folder.

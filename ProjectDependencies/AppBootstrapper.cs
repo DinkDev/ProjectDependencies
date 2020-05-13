@@ -6,6 +6,7 @@
     using ByteDev.DotNet.Project;
     using ByteDev.DotNet.Solution;
     using Caliburn.Micro;
+    using DataAccess;
     using Model;
     using Ookii.Dialogs.Wpf;
     using Properties;
@@ -36,6 +37,7 @@
             builder.RegisterType<DotNetProject>().SingleInstance();
             builder.RegisterType<SolutionParser>().SingleInstance();
             builder.RegisterType<SolutionFileHelper>().SingleInstance();
+            builder.RegisterType<ProjectDependencyContext>();
 
             // VMs
             builder.RegisterType<SolutionsViewModel>().SingleInstance();
@@ -45,6 +47,8 @@
             builder.RegisterType<VistaFolderBrowserDialog>();
 
             _container = builder.Build();
+
+            AppDomain.CurrentDomain.SetData(@"DataDirectory", Environment.CurrentDirectory);
         }
 
         protected override object GetInstance(Type service, string key)

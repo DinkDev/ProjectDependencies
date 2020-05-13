@@ -26,11 +26,11 @@ namespace ProjectDependencies.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database\\Proj" +
-            "ectDependencies.mdf;Integrated Security=True;Connect Timeout=30")]
-        public string Setting {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectDependencies;Integrated S" +
+            "ecurity=True")]
+        public string ProjectDependencyContext {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["ProjectDependencyContext"]));
             }
         }
         

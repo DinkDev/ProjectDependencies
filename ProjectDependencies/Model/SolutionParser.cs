@@ -30,7 +30,7 @@
             _mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<string, string>().ConvertUsing<NullStringConverter>();
-                cfg.CreateMap<string, Version>().ConvertUsing<VersionStringConverter>();
+                cfg.CreateMap<string, VersionData>().ConvertUsing<VersionStringConverter>();
 
                 cfg.CreateMap<Tuple<string, DotNetSolution>, SolutionData>()
                     .ForMember(dest => dest.Name, opt => opt.MapFrom(src => Path.GetFileNameWithoutExtension(src.Item1)))
@@ -66,7 +66,7 @@
                     .ForMember(dest => dest.LibraryReferences,
                         opt => opt.MapFrom(src => src.Item3.References.Select(r => r).ToList()));
 
-                cfg.CreateMap<Reference, LibraryReferenceData>();
+                cfg.CreateMap<Reference, ProjectLibraryReferenceData>();
 
             });
         }

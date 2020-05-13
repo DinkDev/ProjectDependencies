@@ -78,6 +78,8 @@
                 settings);
             var sut = new SolutionFileHelper(settings, parser);
 
+            var t = new Version();
+
             SolutionData actual;
             try
             {

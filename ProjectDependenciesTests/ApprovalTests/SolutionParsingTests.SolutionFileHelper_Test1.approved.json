@@ -1,76 +1,88 @@
 ﻿{
+    "SolutionDataId": 0,
     "Name": "MerlinTransformSolution",
     "SolutionPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt",
     "VisualStudioVersion": {
         "Major": 14,
         "Minor": 0,
         "Build": 25420,
-        "Revision": 1,
-        "MajorRevision": 0,
-        "MinorRevision": 1
+        "Revision": 1
     },
     "ProjectFiles": [
         {
+            "ProjectFileDataId": 0,
             "Name": "Merlin.ProcessLibrary",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.xml",
             "Guid": "644e13c2-5f0a-4370-b62c-210043d4be60"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "Merlin.TransformServer",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.TransformServer\\Merlin.TransformServer.xml",
             "Guid": "aa7f0fd8-aac2-4410-988a-5748796e3959"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "TransformConsole",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\TransformConsole\\TransformConsole.xml",
             "Guid": "43dccca9-0304-47e8-af4e-1454e7dad145"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "XML4IPTester",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\XML4IPTester\\XML4IPTester.xml",
             "Guid": "633f0105-d696-413e-9857-5c56560562cb"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "Merlin.Discovery.Tests",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.Discovery.Tests\\Merlin.Discovery.Tests.xml",
             "Guid": "2facc644-46e2-418f-87d5-3c7f61ec7354"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "Merlin.ProcessLibrary.Tests",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.ProcessLibrary.Tests\\Merlin.ProcessLibrary.Tests.xml",
             "Guid": "6fe94e43-df8c-47b6-b064-4550201bd6f1"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "AttributeConfidenceLib",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\AttributeConfidenceLib\\AttributeConfidenceLib.xml",
             "Guid": "c87678ef-b0a0-4887-8815-407e930c14e9"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "FA_IDSConsole",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FA_IDSConsole\\FA_IDSConsole.xml",
             "Guid": "d127cff7-d78c-47e7-a59f-fe716d4985c4"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "FA_Test_GUI",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FA_Test_GUI\\FA_Test_GUI.xml",
             "Guid": "63f2f33d-308e-48a0-8889-09110ebe9aa0"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "FormAnalysis",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FormAnalysis\\FormAnalysis.xml",
             "Guid": "70ebdbd3-e842-4bca-a03b-36887747f7c9"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "IDSXMLBuilder",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\IDSXML4IPBuilder\\IDSXMLBuilder.xml",
             "Guid": "87f686bf-5a56-4723-a79e-e50e221ef153"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "IDSXMLBuilder.Tests",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\IDSXMLBuilder.Tests\\IDSXMLBuilder.Tests.xml",
             "Guid": "d5690926-c282-488d-97d1-87bc92831685"
         },
         {
+            "ProjectFileDataId": 0,
             "Name": "TransformLib",
             "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\TransformLib\\TransformLib.xml",
             "Guid": "4f81a9f9-7557-4cab-bbf6-91a166d11551"
@@ -78,28 +90,34 @@
     ],
     "Projects": [
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "Merlin.ProcessLibrary",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.xml",
                 "Guid": "644e13c2-5f0a-4370-b62c-210043d4be60"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "FormAnalysis",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\FormAnalysis\\FormAnalysis.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "IDSXMLBuilder",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\IDSXML4IPBuilder\\IDSXMLBuilder.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "TransformLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\TransformLib\\TransformLib.csproj"
@@ -107,14 +125,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Atalasoft.dotImage",
                     "Version": {
                         "Major": 10,
                         "Minor": 4,
                         "Build": 1,
-                        "Revision": 60644,
-                        "MajorRevision": 0,
-                        "MinorRevision": -4892
+                        "Revision": 60644
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "2b02b46f7326f73b",
@@ -124,14 +141,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Atalasoft.dotImage.AdvancedDocClean",
                     "Version": {
                         "Major": 10,
                         "Minor": 4,
                         "Build": 1,
-                        "Revision": 60644,
-                        "MajorRevision": 0,
-                        "MinorRevision": -4892
+                        "Revision": 60644
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "2b02b46f7326f73b",
@@ -141,14 +157,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Atalasoft.dotImage.Lib",
                     "Version": {
                         "Major": 10,
                         "Minor": 4,
                         "Build": 1,
-                        "Revision": 60644,
-                        "MajorRevision": 0,
-                        "MinorRevision": -4892
+                        "Revision": 60644
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "2b02b46f7326f73b",
@@ -158,14 +173,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Atalasoft.Shared",
                     "Version": {
                         "Major": 10,
                         "Minor": 4,
                         "Build": 1,
-                        "Revision": 60644,
-                        "MajorRevision": 0,
-                        "MinorRevision": -4892
+                        "Revision": 60644
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "2b02b46f7326f73b",
@@ -175,14 +189,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "blobject",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -192,14 +205,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -209,14 +221,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "NLog",
                     "Version": {
                         "Major": 2,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "5120e14c03d0593c",
@@ -226,14 +237,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "OCRProcessParms",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -243,14 +253,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "OpenNLP",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -260,14 +269,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrepForCDC",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -277,14 +285,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrepForIDSForms",
                     "Version": {
                         "Major": 1,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 4,
-                        "MajorRevision": 0,
-                        "MinorRevision": 4
+                        "Revision": 4
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -294,14 +301,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PresentationCore",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -311,14 +317,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 1,
                         "Minor": 0,
                         "Build": 2,
-                        "Revision": 4,
-                        "MajorRevision": 0,
-                        "MinorRevision": 4
+                        "Revision": 4
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -328,14 +333,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "SharpEntropy",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -345,14 +349,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "SharpWordNet",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -362,14 +365,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -379,14 +381,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.configuration",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -396,14 +397,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -413,14 +413,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -430,14 +429,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Management",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -447,14 +445,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Runtime.Serialization",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -464,14 +461,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.ServiceModel",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -481,14 +477,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Windows.Forms",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -498,14 +493,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xaml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -515,14 +509,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -532,14 +525,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -549,14 +541,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -566,14 +557,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -583,14 +573,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -600,14 +589,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "WindowsBase",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -619,18 +607,22 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "Merlin.TransformServer",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.TransformServer\\Merlin.TransformServer.xml",
                 "Guid": "aa7f0fd8-aac2-4410-988a-5748796e3959"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.ProcessLibrary",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "TransformLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\TransformLib\\TransformLib.csproj"
@@ -638,14 +630,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 16,
-                        "Revision": 23292,
-                        "MajorRevision": 0,
-                        "MinorRevision": 23292
+                        "Revision": 23292
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -655,14 +646,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -672,14 +662,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.configuration",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -689,14 +678,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -706,14 +694,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Runtime.Serialization",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -723,14 +710,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.ServiceModel",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -740,14 +726,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -757,14 +742,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -774,14 +758,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -791,14 +774,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -808,14 +790,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -827,18 +808,22 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "TransformConsole",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\TransformConsole\\TransformConsole.xml",
                 "Guid": "43dccca9-0304-47e8-af4e-1454e7dad145"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.ProcessLibrary",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.TransformServer",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.TransformServer\\Merlin.TransformServer.csproj"
@@ -846,14 +831,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "blobject",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -863,14 +847,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -880,14 +863,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -897,14 +879,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -914,14 +895,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.configuration",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -931,14 +911,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -948,14 +927,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Runtime.Serialization",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -965,14 +943,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.ServiceModel",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -982,14 +959,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Web.Extensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -999,14 +975,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1016,14 +991,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1033,14 +1007,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1050,14 +1023,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1067,14 +1039,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1084,14 +1055,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "TableDetect",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1101,14 +1071,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "UIAutomationProvider",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1120,18 +1089,22 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "XML4IPTester",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\XML4IPTester\\XML4IPTester.xml",
                 "Guid": "633f0105-d696-413e-9857-5c56560562cb"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.ProcessLibrary",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.csproj"
@@ -1139,14 +1112,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1156,14 +1128,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1173,14 +1144,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1190,14 +1160,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1207,14 +1176,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1224,14 +1192,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1241,14 +1208,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1258,14 +1224,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1275,14 +1240,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1294,23 +1258,28 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "Merlin.Discovery.Tests",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.Discovery.Tests\\Merlin.Discovery.Tests.xml",
                 "Guid": "2facc644-46e2-418f-87d5-3c7f61ec7354"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.ProcessLibrary",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.TransformServer",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.TransformServer\\Merlin.TransformServer.csproj"
@@ -1318,14 +1287,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1335,14 +1303,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1352,14 +1319,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1369,14 +1335,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1386,14 +1351,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.CodedUITestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1403,14 +1367,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Common",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1420,14 +1383,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Extension",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1437,14 +1399,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITesting",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1456,18 +1417,22 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "Merlin.ProcessLibrary.Tests",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\Merlin.ProcessLibrary.Tests\\Merlin.ProcessLibrary.Tests.xml",
                 "Guid": "6fe94e43-df8c-47b6-b064-4550201bd6f1"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "Merlin.ProcessLibrary",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\Merlin.ProcessLibrary\\Merlin.ProcessLibrary.csproj"
@@ -1475,14 +1440,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 22,
-                        "Revision": 23603,
-                        "MajorRevision": 0,
-                        "MinorRevision": 23603
+                        "Revision": 23603
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -1492,14 +1456,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 1,
                         "Minor": 0,
                         "Build": 7,
-                        "Revision": 3,
-                        "MajorRevision": 0,
-                        "MinorRevision": 3
+                        "Revision": 3
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -1509,14 +1472,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1526,14 +1488,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.XML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1543,14 +1504,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1560,14 +1520,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1577,14 +1536,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.CodedUITestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1594,14 +1552,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Common",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1611,14 +1568,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Extension",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1628,14 +1584,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITesting",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -1647,7 +1602,9 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "AttributeConfidenceLib",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\AttributeConfidenceLib\\AttributeConfidenceLib.xml",
                 "Guid": "c87678ef-b0a0-4887-8815-407e930c14e9"
@@ -1655,14 +1612,13 @@
             "SolutionProjectReferences": [],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 1,
                         "Minor": 1,
                         "Build": 22,
-                        "Revision": 24886,
-                        "MajorRevision": 0,
-                        "MinorRevision": 24886
+                        "Revision": 24886
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -1672,14 +1628,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "NLog",
                     "Version": {
                         "Major": 2,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "5120e14c03d0593c",
@@ -1689,14 +1644,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 1,
                         "Minor": 0,
                         "Build": 7,
-                        "Revision": 2,
-                        "MajorRevision": 0,
-                        "MinorRevision": 2
+                        "Revision": 2
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "",
@@ -1706,14 +1660,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1723,14 +1676,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1740,14 +1692,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1757,14 +1708,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1774,14 +1724,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1791,14 +1740,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1808,14 +1756,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1825,14 +1772,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1844,18 +1790,22 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "FA_IDSConsole",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FA_IDSConsole\\FA_IDSConsole.xml",
                 "Guid": "d127cff7-d78c-47e7-a59f-fe716d4985c4"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "FormAnalysis",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\FormAnalysis\\FormAnalysis.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "IDSXMLBuilder",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\IDSXML4IPBuilder\\IDSXMLBuilder.csproj"
@@ -1863,14 +1813,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1880,14 +1829,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1897,14 +1845,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Windows.Forms",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1914,14 +1861,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1931,14 +1877,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1948,14 +1893,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1965,14 +1909,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -1982,14 +1925,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2001,13 +1943,16 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "FA_Test_GUI",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FA_Test_GUI\\FA_Test_GUI.xml",
                 "Guid": "63f2f33d-308e-48a0-8889-09110ebe9aa0"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "FormAnalysis",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\FormAnalysis\\FormAnalysis.csproj"
@@ -2015,14 +1960,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PresentationCore",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2032,14 +1976,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2049,14 +1992,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2066,14 +2008,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2083,14 +2024,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xaml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2100,14 +2040,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2117,14 +2056,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2134,14 +2072,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2151,14 +2088,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2168,14 +2104,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Deployment",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2185,14 +2120,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2202,14 +2136,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Windows.Forms",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2219,14 +2152,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2236,14 +2168,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "TableDetect",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2253,14 +2184,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "WindowsBase",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2272,13 +2202,16 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "FormAnalysis",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\FormAnalysis\\FormAnalysis.xml",
                 "Guid": "70ebdbd3-e842-4bca-a03b-36887747f7c9"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
@@ -2286,14 +2219,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2303,14 +2235,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "NLog",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2320,14 +2251,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2337,14 +2267,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2354,14 +2283,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2371,14 +2299,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2388,14 +2315,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Windows.Forms",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2405,14 +2331,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2422,14 +2347,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2439,14 +2363,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2456,14 +2379,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2473,14 +2395,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2490,14 +2411,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "TableDetect",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2509,23 +2429,28 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "IDSXMLBuilder",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\IDSXML4IPBuilder\\IDSXMLBuilder.xml",
                 "Guid": "87f686bf-5a56-4723-a79e-e50e221ef153"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "AttributeConfidenceLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\AttributeConfidenceLib\\AttributeConfidenceLib.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "FormAnalysis",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\FormAnalysis\\FormAnalysis.csproj"
                 },
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "TransformLib",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\TransformLib\\TransformLib.csproj"
@@ -2533,14 +2458,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2550,14 +2474,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "NLog",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2567,14 +2490,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "PrimeOCRXML",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2584,14 +2506,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2601,14 +2522,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.configuration",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2618,14 +2538,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2635,14 +2554,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Drawing",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2652,14 +2570,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2669,14 +2586,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2686,14 +2602,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2703,14 +2618,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2720,14 +2634,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2739,13 +2652,16 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "IDSXMLBuilder.Tests",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\IDSXMLBuilder.Tests\\IDSXMLBuilder.Tests.xml",
                 "Guid": "d5690926-c282-488d-97d1-87bc92831685"
             },
             "SolutionProjectReferences": [
                 {
+                    "SolutionProjectReferenceDataId": 0,
                     "Name": "IDSXMLBuilder",
                     "SolutionName": "MerlinTransformSolution",
                     "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\MerlinTransformSolution.txt\\..\\IDSXML4IPBuilder\\IDSXMLBuilder.csproj"
@@ -2753,14 +2669,13 @@
             ],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2770,14 +2685,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 1,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -2787,14 +2701,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.UnitTestFramework",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2804,14 +2717,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.QualityTools.CodedUITestFramework",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -2821,14 +2733,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Common",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -2838,14 +2749,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITest.Extension",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -2855,14 +2765,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.VisualStudio.TestTools.UITesting",
                     "Version": {
                         "Major": 10,
                         "Minor": 0,
                         "Build": 0,
-                        "Revision": 0,
-                        "MajorRevision": 0,
-                        "MinorRevision": 0
+                        "Revision": 0
                     },
                     "Culture": "neutral",
                     "PublicKeyToken": "b03f5f7f11d50a3a",
@@ -2874,7 +2783,9 @@
             ]
         },
         {
+            "ProjectDataId": 0,
             "FileData": {
+                "ProjectFileDataId": 0,
                 "Name": "TransformLib",
                 "ProjectPath": "D:\\UserData\\MyGit\\ProjectDependencies\\ProjectDependenciesTests\\bin\\Debug\\TestFiles\\TransformLib\\TransformLib.xml",
                 "Guid": "4f81a9f9-7557-4cab-bbf6-91a166d11551"
@@ -2882,14 +2793,13 @@
             "SolutionProjectReferences": [],
             "LibraryReferences": [
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Merlin.Common",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2899,14 +2809,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2916,14 +2825,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Configuration",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2933,14 +2841,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Core",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2950,14 +2857,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml.Linq",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2967,14 +2873,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data.DataSetExtensions",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -2984,14 +2889,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "Microsoft.CSharp",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -3001,14 +2905,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Data",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -3018,14 +2921,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Net.Http",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",
@@ -3035,14 +2937,13 @@
                     "Private": false
                 },
                 {
+                    "ProjectLibraryReferenceDataId": 0,
                     "Name": "System.Xml",
                     "Version": {
                         "Major": 0,
                         "Minor": 0,
-                        "Build": -1,
-                        "Revision": -1,
-                        "MajorRevision": -1,
-                        "MinorRevision": -1
+                        "Build": 1,
+                        "Revision": 1
                     },
                     "Culture": "",
                     "PublicKeyToken": "",

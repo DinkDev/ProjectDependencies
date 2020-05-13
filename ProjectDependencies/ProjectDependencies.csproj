@@ -102,7 +102,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataAccess\ProjectDependencyContext.cs" />
     <Compile Include="DataAccess\SolutionProjectReferenceData.cs" />
+    <Compile Include="DataAccess\VersionData.cs" />
     <Compile Include="Model\IParserSettings.cs" />
     <Compile Include="Model\SolutionFileHelper.cs" />
     <Compile Include="Model\TypeConverters\AutoMapperCompatibilityExtensions.cs" />
@@ -119,7 +121,7 @@
     <Compile Include="AppBootstrapper.cs" />
     <Compile Include="DataAccess\ProjectData.cs" />
     <Compile Include="DataAccess\ProjectFileData.cs" />
-    <Compile Include="DataAccess\LibraryReferenceData.cs" />
+    <Compile Include="DataAccess\ProjectLibraryReferenceData.cs" />
     <Compile Include="DataAccess\SolutionData.cs" />
     <Compile Include="ViewModels\SolutionFileViewModel.cs" />
     <Compile Include="ViewModels\SolutionsViewModel.cs" />

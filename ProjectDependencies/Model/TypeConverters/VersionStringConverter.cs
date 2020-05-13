@@ -1,13 +1,13 @@
 ﻿namespace ProjectDependencies.Model.TypeConverters
 {
-    using System;
     using AutoMapper;
+    using DataAccess;
 
-    public class VersionStringConverter : ITypeConverter<string, Version>
+    public class VersionStringConverter : ITypeConverter<string, VersionData>
     {
-       public Version Convert(string source, Version destination, ResolutionContext context)
+       public VersionData Convert(string source, VersionData destination, ResolutionContext context)
        {
-           return Version.TryParse(source, out var rv) ? rv : new Version();
+           return VersionData.TryParse(source, out var rv) ? rv : new VersionData();
        }
     }
 }
