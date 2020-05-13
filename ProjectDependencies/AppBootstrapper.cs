@@ -3,7 +3,10 @@
     using System;
     using System.Collections.Generic;
     using Autofac;
+    using ByteDev.DotNet.Project;
+    using ByteDev.DotNet.Solution;
     using Caliburn.Micro;
+    using Model;
     using Properties;
     using ViewModels;
 
@@ -25,10 +28,17 @@
 
             builder.RegisterType<WindowManager>().As<IWindowManager>().SingleInstance();
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
-            builder.RegisterType<ShellViewModel>().As<IShell>().SingleInstance();
-            builder.RegisterType<Settings>().SingleInstance();
 
+            // resources
+            builder.RegisterType<Settings>().As<IParserSettings>().SingleInstance();
+            builder.RegisterType<DotNetSolution>().SingleInstance();
+            builder.RegisterType<DotNetProject>().SingleInstance();
+            builder.RegisterType<SolutionParser>().SingleInstance();
+            builder.RegisterType<SolutionFileHelper>().SingleInstance();
+
+            // VMs
             builder.RegisterType<SolutionsViewModel>().SingleInstance();
+            builder.RegisterType<ShellViewModel>().As<IShell>().SingleInstance();
 
             _container = builder.Build();
         }

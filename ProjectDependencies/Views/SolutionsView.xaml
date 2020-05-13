@@ -7,6 +7,32 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            <Label>SolutionsView</Label>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Name="Solutions" 
+                  Margin="5,5,5,5"
+                  AutoGenerateColumns="False"
+                  EnableRowVirtualization="True"
+                  RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Path"
+                                    Header="Project File"
+                                    Binding="{Binding Path=Path}"
+                                    IsReadOnly="True"
+                                    Width="Auto" />
+                <DataGridCheckBoxColumn x:Name="Select"
+                                        Header="Selected"
+                                        Binding="{Binding Path=IsSelected}"
+                                        Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="SearchForProjects" Height="40" >Search for Projects</Button>
+        </StackPanel>
+
     </Grid>
 </UserControl>

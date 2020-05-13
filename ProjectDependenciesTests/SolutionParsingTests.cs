@@ -72,19 +72,16 @@
         {
             var solutionFile = @"TestFiles\\MerlinTransformSolution.txt";
             var settings = new TestParserSettings();
-            var sut = new SolutionParser(
+            var parser = new SolutionParser(
                 s => new DotNetSolution(s),
                 x => new DotNetProject(x),
                 settings);
+            var sut = new SolutionFileHelper(parser);
 
             SolutionData actual;
-
             try
             {
-                using (var solutionStream = File.OpenRead(solutionFile))
-                {
-                    actual = sut.ParseSolution(solutionFile, solutionStream).Result;
-                }
+                actual = sut.ReadSolutionFile(solutionFile);
             }
             catch (Exception ex)
             {
@@ -96,10 +93,7 @@
             {
                 try
                 {
-                    using (var projectStream = File.OpenRead(projectFile.ProjectPath))
-                    {
-                        actual.Projects.Add(sut.ParseProject(projectFile, actual, projectStream).Result);
-                    }
+                    actual.Projects.Add(sut.ReadProjectFile(actual, projectFile));
                 }
                 catch (Exception ex)
                 {

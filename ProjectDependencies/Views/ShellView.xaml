@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel>
-            <Button x:Name="SelectSolutionsView" Height="32">Solutions View</Button>
+            <Button x:Name="SelectSolutionsView" Height="40">Solutions View</Button>
 
         </StackPanel>
 
