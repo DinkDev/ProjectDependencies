@@ -15,13 +15,13 @@
     {
         private readonly Func<string, DotNetSolution> _solutionReader;
         private readonly Func<XDocument, DotNetProject> _projectReader;
-        private readonly IParserSettings _settings;
+        private readonly IFileSettings _settings;
         private readonly MapperConfiguration _mapperConfig;
 
         public SolutionParser(
             Func<string, DotNetSolution> solutionReader,
             Func<XDocument, DotNetProject> projectReader,
-            IParserSettings settings)
+            IFileSettings settings)
         {
             _solutionReader = solutionReader ?? throw new ArgumentNullException(nameof(solutionReader));
             _projectReader = projectReader ?? throw new ArgumentNullException(nameof(projectReader));

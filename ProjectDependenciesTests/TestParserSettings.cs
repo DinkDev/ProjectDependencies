@@ -2,8 +2,9 @@
 {
     using ProjectDependencies.Model;
 
-    public class TestParserSettings : IParserSettings
+    public class TestParserSettings : IFileSettings
     {
         public string ProjectFileExtension { get; } = @".xml";
+        public string SolutionSearchWildcard { get; } = @"*.sln";
     }
 }

@@ -30,7 +30,7 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5,5,5,5">
             <Button x:Name="SearchForProjects" Height="40" >Search for Projects</Button>
         </StackPanel>
 

@@ -7,6 +7,7 @@
     using ByteDev.DotNet.Solution;
     using Caliburn.Micro;
     using Model;
+    using Ookii.Dialogs.Wpf;
     using Properties;
     using ViewModels;
 
@@ -30,7 +31,7 @@
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
 
             // resources
-            builder.RegisterType<Settings>().As<IParserSettings>().SingleInstance();
+            builder.RegisterType<Settings>().As<IFileSettings>().SingleInstance();
             builder.RegisterType<DotNetSolution>().SingleInstance();
             builder.RegisterType<DotNetProject>().SingleInstance();
             builder.RegisterType<SolutionParser>().SingleInstance();
@@ -39,6 +40,9 @@
             // VMs
             builder.RegisterType<SolutionsViewModel>().SingleInstance();
             builder.RegisterType<ShellViewModel>().As<IShell>().SingleInstance();
+
+            // Dialogs
+            builder.RegisterType<VistaFolderBrowserDialog>();
 
             _container = builder.Build();
         }

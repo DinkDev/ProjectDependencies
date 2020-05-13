@@ -13,5 +13,8 @@
     <Setting Name="ProjectFileExtension" Type="System.String" Scope="User">
       <Value Profile="(Default)">.csproj</Value>
     </Setting>
+    <Setting Name="SolutionSearchWildcard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.sln</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

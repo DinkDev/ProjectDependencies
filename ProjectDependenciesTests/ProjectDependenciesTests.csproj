@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="ApprovalTests\SolutionParsingTests.SolutionParser_Test1.approved.json" />
+    <None Include="ApprovalTests\SolutionParsingTests.SolutionFileHelper_Test1.approved.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

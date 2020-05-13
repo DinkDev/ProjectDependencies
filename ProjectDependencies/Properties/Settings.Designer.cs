@@ -45,5 +45,17 @@ namespace ProjectDependencies.Properties {
                 this["ProjectFileExtension"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("*.sln")]
+        public string SolutionSearchWildcard {
+            get {
+                return ((string)(this["SolutionSearchWildcard"]));
+            }
+            set {
+                this["SolutionSearchWildcard"] = value;
+            }
+        }
     }
 }

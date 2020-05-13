@@ -68,7 +68,7 @@
         }
 
         [TestMethod]
-        public void SolutionParser_Test1()
+        public void SolutionFileHelper_Test1()
         {
             var solutionFile = @"TestFiles\\MerlinTransformSolution.txt";
             var settings = new TestParserSettings();
@@ -76,12 +76,12 @@
                 s => new DotNetSolution(s),
                 x => new DotNetProject(x),
                 settings);
-            var sut = new SolutionFileHelper(parser);
+            var sut = new SolutionFileHelper(settings, parser);
 
             SolutionData actual;
             try
             {
-                actual = sut.ReadSolutionFile(solutionFile);
+                actual = sut.ReadSolutionFileAsync(solutionFile).Result;
             }
             catch (Exception ex)
             {
@@ -93,7 +93,7 @@
             {
                 try
                 {
-                    actual.Projects.Add(sut.ReadProjectFile(actual, projectFile));
+                    actual.Projects.Add(sut.ReadProjectFileAsync(actual, projectFile).Result);
                 }
                 catch (Exception ex)
                 {

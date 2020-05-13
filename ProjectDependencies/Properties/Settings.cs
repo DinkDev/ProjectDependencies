@@ -2,7 +2,7 @@
 {
     using Model;
 
-    internal sealed partial class Settings : IParserSettings
+    internal sealed partial class Settings : IFileSettings
     {
     }
 }
