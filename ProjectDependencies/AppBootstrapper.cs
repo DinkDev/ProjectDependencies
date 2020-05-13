@@ -28,6 +28,8 @@
             builder.RegisterType<ShellViewModel>().As<IShell>().SingleInstance();
             builder.RegisterType<Settings>().SingleInstance();
 
+            builder.RegisterType<SolutionsViewModel>().SingleInstance();
+
             _container = builder.Build();
         }
 

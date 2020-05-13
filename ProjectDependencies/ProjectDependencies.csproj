@@ -91,6 +91,7 @@
     <Compile Include="Model\TypeConverters\AutoMapperCompatibilityExtensions.cs" />
     <Compile Include="Model\TypeConverters\NullStringConverter.cs" />
     <Compile Include="Model\TypeConverters\VersionStringConverter.cs" />
+    <Compile Include="ViewModels\IDependencyScreen.cs" />
     <Compile Include="ViewModels\IShell.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="App.xaml.cs">
@@ -102,6 +103,11 @@
     <Compile Include="DataAccess\ProjectFileData.cs" />
     <Compile Include="DataAccess\LibraryReferenceData.cs" />
     <Compile Include="DataAccess\SolutionData.cs" />
+    <Compile Include="ViewModels\SolutionsViewModel.cs" />
+    <Page Include="Views\SolutionsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
