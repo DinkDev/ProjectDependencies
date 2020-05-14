@@ -5,7 +5,7 @@
 
     public class ProjectDependencyContext : DbContext
     {
-        public ProjectDependencyContext() : base(nameof(ProjectDependencyContext))
+        public ProjectDependencyContext(IDataAccessSettings settings) : base(settings.DataAccessConnection)
         {
         }
 

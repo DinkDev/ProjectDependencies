@@ -1,25 +1,33 @@
 ﻿namespace ProjectDependencies.ViewModels
 {
-    using System.ComponentModel;
     using Caliburn.Micro;
+    using DataAccess;
 
     public class SolutionFileViewModel : PropertyChangedBase
     {
-        private string _path;
+        private readonly string _solutionPath;
         private bool _isSelected;
 
-        public string Path
+        /// <summary>
+        /// Load current object and set as selected
+        /// </summary>
+        /// <param name="wrapped"></param>
+        public SolutionFileViewModel(SolutionData wrapped)
         {
-            get => _path;
-            set
-            {
-                if (value != _path)
-                {
-                    _path = value;
-                    NotifyOfPropertyChange();
-                }
-            }
+            Wrapped = wrapped;
+            IsSelected = true;
         }
+
+        /// <summary>
+        /// Load new solution file name (not selected)
+        /// </summary>
+        /// <param name="solutionPath"></param>
+        public SolutionFileViewModel(string solutionPath)
+        {
+            _solutionPath = solutionPath;
+        }
+
+        public string SolutionPath => _solutionPath ?? Wrapped?.SolutionPath ?? @"Error";
 
         public bool IsSelected
         {
@@ -30,8 +38,15 @@
                 {
                     _isSelected = value;
                     NotifyOfPropertyChange(() => IsSelected);
+                    NotifyOfPropertyChange(() => IsNew);
+                    NotifyOfPropertyChange(() => IsDeleted);
                 }
             }
         }
+        
+        public SolutionData Wrapped { get; }
+
+        public bool IsNew => _solutionPath != null && IsSelected;
+        public bool IsDeleted => Wrapped != null && !IsSelected;
     }
 }

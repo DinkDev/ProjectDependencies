@@ -6,7 +6,7 @@
     [DebuggerDisplay("Name = {Name}, Version = {VisualStudioVersion}")]
     public class SolutionData
     {
-        public int SolutionDataId { get; set; }
+        public int SolutionDataId { get; set; } = int.MinValue;
 
         public string Name { get; set; } = string.Empty;
         public string SolutionPath { get; set; } = string.Empty;

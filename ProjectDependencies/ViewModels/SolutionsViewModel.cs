@@ -11,7 +11,7 @@
     using Model;
     using Ookii.Dialogs.Wpf;
 
-    public class SolutionsViewModel : Conductor<IDependencyScreen>.Collection.OneActive, IDependencyScreen
+    public sealed class SolutionsViewModel : Conductor<IDependencyScreen>.Collection.OneActive, IDependencyScreen
     {
         private readonly SolutionFileHelper _fileHelper;
         private readonly Func<ProjectDependencyContext> _getDbContext;
@@ -26,14 +26,7 @@
 
             DisplayName = @"Solutions View";
 
-            foreach (var directory in _getDbContext().Solutions.Select(s => s.SolutionPath))
-            {
-                _workingSolutions.Add(new SolutionFileViewModel{Path = directory, IsSelected = true});
-            }
-
-            Solutions = CollectionViewSource.GetDefaultView(_workingSolutions);
-            Solutions.SortDescriptions.Add(new SortDescription("Path", ListSortDirection.Ascending));
-            Solutions.SortDescriptions.Add(new SortDescription("IsSelected", ListSortDirection.Descending));
+            LoadSolutionsFromDb();
         }
 
         private ICollectionView _solutions;
@@ -68,21 +61,39 @@
             }
         }
 
+        public async void SyncSelectedProjects()
+        {
+            //var selectedSolutions = _workingSolutions.Where(s => s.IsSelected).ToArray();
+            //var solutionsToDelete = _workingSolutions.Where(s => !s.IsSelected && s.)
+
+        }
+
         private void MergeSolutions(Task<string[]> solutionTask)
         {
             var solutions = solutionTask.Result;
 
             Execute.OnUIThread(() =>
             {
-                var currentSolutions = _workingSolutions.Select(s => s.Path).ToArray();
+                var currentSolutions = _workingSolutions.Select(s => s.SolutionPath).ToArray();
                 var newSolutions = solutions.Where(s => !currentSolutions.Contains(s));
 
-                _workingSolutions.AddRange(newSolutions.Select(n => new SolutionFileViewModel {Path = n}));
+                _workingSolutions.AddRange(newSolutions.Select(n => new SolutionFileViewModel(n)));
 
                 Solutions = CollectionViewSource.GetDefaultView(_workingSolutions);
                 Solutions.SortDescriptions.Add(new SortDescription("Path", ListSortDirection.Ascending));
-                Solutions.SortDescriptions.Add(new SortDescription("IsSelected", ListSortDirection.Descending));
             });
+        }
+
+        private void LoadSolutionsFromDb()
+        {
+            // TODO: async this, also need to add a UI wait notification
+            foreach (var solution in _getDbContext().Solutions)
+            {
+                _workingSolutions.Add(new SolutionFileViewModel(solution));
+            }
+
+            Solutions = CollectionViewSource.GetDefaultView(_workingSolutions);
+            Solutions.SortDescriptions.Add(new SortDescription("Path", ListSortDirection.Ascending));
         }
     }
 }

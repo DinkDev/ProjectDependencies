@@ -102,6 +102,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataAccess\IDataAccessSettings.cs" />
     <Compile Include="DataAccess\ProjectDependencyContext.cs" />
     <Compile Include="DataAccess\SolutionProjectReferenceData.cs" />
     <Compile Include="DataAccess\VersionData.cs" />

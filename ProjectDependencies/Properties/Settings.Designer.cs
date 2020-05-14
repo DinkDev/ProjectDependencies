@@ -28,9 +28,9 @@ namespace ProjectDependencies.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjectDependencies;Integrated S" +
             "ecurity=True")]
-        public string ProjectDependencyContext {
+        public string DataAccessConnection {
             get {
-                return ((string)(this["ProjectDependencyContext"]));
+                return ((string)(this["DataAccessConnection"]));
             }
         }
         

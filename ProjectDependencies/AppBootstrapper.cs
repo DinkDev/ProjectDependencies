@@ -32,7 +32,7 @@
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
 
             // resources
-            builder.RegisterType<Settings>().As<IFileSettings>().SingleInstance();
+            builder.RegisterType<Settings>().As<IFileSettings>().As<IDataAccessSettings>().SingleInstance();
             builder.RegisterType<DotNetSolution>().SingleInstance();
             builder.RegisterType<DotNetProject>().SingleInstance();
             builder.RegisterType<SolutionParser>().SingleInstance();
