@@ -18,7 +18,21 @@
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+
             modelBuilder.ComplexType<VersionData>();
+
+            modelBuilder.Entity<SolutionData>()
+                .HasOptional(c => c.Projects)
+                .WithOptionalDependent()
+                .WillCascadeOnDelete(true);
+            
+            modelBuilder.Entity<SolutionData>()
+                .HasOptional(c => c.ProjectFiles)
+                .WithOptionalDependent()
+                .WillCascadeOnDelete(true);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

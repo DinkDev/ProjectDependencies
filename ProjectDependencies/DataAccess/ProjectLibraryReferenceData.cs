@@ -6,7 +6,7 @@
     [DebuggerDisplay("Name = {Name}, Version = {Version}")]
     public class ProjectLibraryReferenceData
     {
-        public long ProjectLibraryReferenceDataId { get; set; }
+        public int ProjectLibraryReferenceDataId { get; set; }
 
 
         /// <summary>

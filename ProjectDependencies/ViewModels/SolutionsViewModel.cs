@@ -1,6 +1,7 @@
 ﻿namespace ProjectDependencies.ViewModels
 {
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel;
     using System.Linq;
     using System.Threading.Tasks;
@@ -47,9 +48,11 @@
         public async void SearchForProjects()
         {
             var dialog = _getFolderBrowser();
+            dialog.Reset();
             dialog.Description = @"Please select a folder to search from.";
             dialog.UseDescriptionForTitle = true;
-            dialog.SelectedPath = @"C:\";
+            //dialog.SelectedPath = @"C:\";
+            dialog.RootFolder = Environment.SpecialFolder.MyComputer;
 
             if (dialog.ShowDialog(this.Parent as Window) ?? false)
             {
@@ -63,9 +66,42 @@
 
         public async void SyncSelectedProjects()
         {
-            //var selectedSolutions = _workingSolutions.Where(s => s.IsSelected).ToArray();
-            //var solutionsToDelete = _workingSolutions.Where(s => !s.IsSelected && s.)
+            var addedSolutionFiles = _workingSolutions.Where(s => s.IsNew).Select(s => s.SolutionPath);
+            var deletedSolutions = _workingSolutions.Where(s => s.IsDeleted).Select(s => s.Wrapped);
 
+            var newSolutions = await Task.Run(() =>
+            {
+                var rv = new List<SolutionData>();
+
+                foreach (var newSolutionFile in addedSolutionFiles)
+                {
+                    rv.Add(_fileHelper.ReadSolutionFileAsync(newSolutionFile).Result);
+                }
+
+                return rv;
+            }).ConfigureAwait(false);
+
+            var context = _getDbContext();
+            try
+            {
+                context.Solutions.AddRange(newSolutions);
+
+                foreach (var solutionData in deletedSolutions.Select(d =>
+                        context.Solutions.FirstOrDefault(s => s.SolutionDataId == d.SolutionDataId))
+                    .Where(s => s != null))
+                {
+                    context.Solutions.Remove(solutionData);
+                }
+
+                //context.Solutions.RemoveRange(deletedSolutions);
+            }
+            finally
+            {
+                // TODO: report the number of edits returned 
+                await context.SaveChangesAsync();
+            }
+
+            LoadSolutionsFromDb();
         }
 
         private void MergeSolutions(Task<string[]> solutionTask)

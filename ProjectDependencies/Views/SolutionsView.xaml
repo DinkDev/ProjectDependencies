@@ -18,14 +18,38 @@
                   CanUserDeleteRows="False"
                   EnableRowVirtualization="True"
                   RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <!-- Highlight edits -->
+                        <DataTrigger Binding="{Binding IsNew}" Value="True">
+                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="Background" Value="#5400FF00" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding IsDeleted}" Value="True">
+                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="Background" Value="#55FF0000" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
             <DataGrid.Columns>
+
+                <DataGridTemplateColumn Header="Selected"
+                                        Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox HorizontalAlignment="Center"
+                                      IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
                 <DataGridTextColumn Header="Solution File"
-                                    Binding="{Binding Path=SolutionPath}"
+                                    Binding="{Binding Path=SolutionPath, Mode=OneWay}"
                                     IsReadOnly="True"
                                     Width="Auto" />
-                <DataGridCheckBoxColumn Header="Selected"
-                                        Binding="{Binding Path=IsSelected}"
-                                        Width="Auto"/>
+
             </DataGrid.Columns>
         </DataGrid>
 

@@ -6,7 +6,7 @@
     [DebuggerDisplay("Name = {Name}")]
     public class ProjectFileData
     {
-        public long ProjectFileDataId { get; set; }
+        public int ProjectFileDataId { get; set; }
 
         public string Name { get; set; } = string.Empty;
         public string ProjectPath { get; set; } = string.Empty;
