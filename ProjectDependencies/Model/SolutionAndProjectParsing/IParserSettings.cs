@@ -1,4 +1,4 @@
-﻿namespace ProjectDependencies.Model
+﻿namespace ProjectDependencies.Model.SolutionAndProjectParsing
 {
     public interface IFileSettings
     {

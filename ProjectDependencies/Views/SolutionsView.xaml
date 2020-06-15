@@ -58,14 +58,14 @@
                     Height="40"
                     Width="100">
                 <TextBlock TextWrapping="Wrap">
-                    Search for Projects
+                    Search for Solutions
                 </TextBlock>
             </Button>
             <Button x:Name="SyncSelectedProjects"
                     Height="40"
                     Width="100">
                 <TextBlock TextWrapping="Wrap">
-                    Sync Selected Projects to DB
+                    Sync Selected Solutions to DB
                 </TextBlock>
             </Button>
         </StackPanel>

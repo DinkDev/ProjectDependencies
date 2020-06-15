@@ -1,10 +1,9 @@
-﻿namespace ProjectDependencies.Model
+﻿namespace ProjectDependencies.Model.SolutionAndProjectParsing
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Threading.Tasks;
-    using DataAccess;
 
     public class SolutionFileHelper
     {
@@ -17,7 +16,7 @@
             _parser = parser ?? throw new ArgumentNullException(nameof(parser));
         }
 
-        public async Task<SolutionData> ReadSolutionFileAsync(string solutionFile)
+        public async Task<SolutionFileData> ReadSolutionFileAsync(string solutionFile)
         {
             return await Task.Run(() =>
             {
@@ -28,7 +27,7 @@
             }).ConfigureAwait(false);
         }
 
-        public async Task<ProjectData> ReadProjectFileAsync(SolutionData solution, ProjectFileData projectFile)
+        public async Task<ProjectFileData> ReadProjectFileAsync(SolutionFileData solution, ProjectFileData projectFile)
         {
             return await Task.Run(() =>
             {

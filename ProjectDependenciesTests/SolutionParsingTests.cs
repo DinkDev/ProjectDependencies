@@ -1,6 +1,7 @@
 ﻿namespace ProjectDependenciesTests
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using ApprovalTests;
     using ApprovalTests.Reporters;
@@ -8,8 +9,7 @@
     using ByteDev.DotNet.Solution;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Newtonsoft.Json;
-    using ProjectDependencies.DataAccess;
-    using ProjectDependencies.Model;
+    using ProjectDependencies.Model.SolutionAndProjectParsing;
 
     [TestClass]
     [UseReporter(typeof(BeyondCompareReporter))]
@@ -80,10 +80,10 @@
 
             var t = new Version();
 
-            SolutionData actual;
+            SolutionFileData actualSolution;
             try
             {
-                actual = sut.ReadSolutionFileAsync(solutionFile).Result;
+                actualSolution = sut.ReadSolutionFileAsync(solutionFile).Result;
             }
             catch (Exception ex)
             {
@@ -91,11 +91,12 @@
                 throw;
             }
 
-            foreach (var projectFile in actual.ProjectFiles)
+            var actualProjects = new List<ProjectFileData>();
+            foreach (var projectFile in actualSolution.ProjectFiles)
             {
                 try
                 {
-                    actual.Projects.Add(sut.ReadProjectFileAsync(actual, projectFile).Result);
+                    actualProjects.Add(sut.ReadProjectFileAsync(actualSolution, projectFile).Result);
                 }
                 catch (Exception ex)
                 {
@@ -103,6 +104,9 @@
                     throw;
                 }
             }
+
+            // TODO: split into 2 tests!
+            var actual = new {Solution = actualSolution, Projects = actualProjects};
 
             var json = JsonConvert.SerializeObject(actual);
             Approvals.VerifyJson(json);

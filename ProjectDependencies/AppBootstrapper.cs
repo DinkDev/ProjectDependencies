@@ -6,8 +6,8 @@
     using ByteDev.DotNet.Project;
     using ByteDev.DotNet.Solution;
     using Caliburn.Micro;
-    using DataAccess;
-    using Model;
+    //using DataAccess;
+    using Model.SolutionAndProjectParsing;
     using Ookii.Dialogs.Wpf;
     using Properties;
     using ViewModels;
@@ -32,12 +32,13 @@
             builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
 
             // resources
-            builder.RegisterType<Settings>().As<IFileSettings>().As<IDataAccessSettings>().SingleInstance();
+            builder.RegisterType<Settings>().As<IFileSettings>() /*.As<IDataAccessSettings>() */
+                .SingleInstance();
             builder.RegisterType<DotNetSolution>().SingleInstance();
             builder.RegisterType<DotNetProject>().SingleInstance();
             builder.RegisterType<SolutionParser>().SingleInstance();
             builder.RegisterType<SolutionFileHelper>().SingleInstance();
-            builder.RegisterType<ProjectDependencyContext>();
+            //builder.RegisterType<ProjectDependencyContext>();
 
             // VMs
             builder.RegisterType<SolutionsViewModel>().SingleInstance();

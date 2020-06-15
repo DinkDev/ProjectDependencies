@@ -1,6 +1,6 @@
 ﻿namespace ProjectDependenciesTests
 {
-    using ProjectDependencies.Model;
+    using ProjectDependencies.Model.SolutionAndProjectParsing;
 
     public class TestParserSettings : IFileSettings
     {

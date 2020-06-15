@@ -1,4 +1,4 @@
-﻿namespace ProjectDependencies.DataAccess
+﻿namespace ProjectDependencies.Model.SolutionAndProjectParsing
 {
     using System;
 

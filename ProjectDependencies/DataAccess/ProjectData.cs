@@ -1,15 +1,19 @@
 ﻿namespace ProjectDependencies.DataAccess
 {
+    using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Diagnostics;
 
     [DebuggerDisplay("Name = {FileData.Name}")]
     public class ProjectData
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProjectDataId { get; set; }
 
-        public int FileDataId { get; set; }
+        public Guid? FileDataId { get; set; }
 
         [ForeignKey(nameof(FileDataId))]
         public virtual ProjectFileData FileData { get; set; }

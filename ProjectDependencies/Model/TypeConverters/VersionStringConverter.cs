@@ -1,7 +1,7 @@
 ﻿namespace ProjectDependencies.Model.TypeConverters
 {
     using AutoMapper;
-    using DataAccess;
+    using SolutionAndProjectParsing;
 
     public class VersionStringConverter : ITypeConverter<string, VersionData>
     {

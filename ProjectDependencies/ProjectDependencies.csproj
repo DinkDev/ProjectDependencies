@@ -105,9 +105,14 @@
     <Compile Include="DataAccess\IDataAccessSettings.cs" />
     <Compile Include="DataAccess\ProjectDependencyContext.cs" />
     <Compile Include="DataAccess\SolutionProjectReferenceData.cs" />
-    <Compile Include="DataAccess\VersionData.cs" />
-    <Compile Include="Model\IParserSettings.cs" />
-    <Compile Include="Model\SolutionFileHelper.cs" />
+    <Compile Include="Model\Crc32.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\IParserSettings.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\ProjectFileData.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\ProjectLibraryReferenceData.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\SolutionFileData.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\SolutionFileHelper.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\SolutionProjectReferenceData.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\VersionData.cs" />
     <Compile Include="Model\TypeConverters\AutoMapperCompatibilityExtensions.cs" />
     <Compile Include="Model\TypeConverters\NullStringConverter.cs" />
     <Compile Include="Model\TypeConverters\VersionStringConverter.cs" />
@@ -137,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\ProjectInSolutionWrapper.cs" />
-    <Compile Include="Model\SolutionParser.cs" />
+    <Compile Include="Model\SolutionAndProjectParsing\SolutionParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
