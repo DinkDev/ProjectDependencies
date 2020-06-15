@@ -9,11 +9,13 @@
     {
         private readonly IFileSettings _settings;
         private readonly SolutionParser _parser;
+        private readonly Crc32 _crc;
 
-        public SolutionFileHelper(IFileSettings settings, SolutionParser parser)
+        public SolutionFileHelper(IFileSettings settings, SolutionParser parser, Crc32 crc)
         {
             _settings = settings ?? throw new ArgumentNullException(nameof(settings));
             _parser = parser ?? throw new ArgumentNullException(nameof(parser));
+            _crc = crc;
         }
 
         public async Task<SolutionFileData> ReadSolutionFileAsync(string solutionFile)
@@ -38,11 +40,11 @@
             }).ConfigureAwait(false);
         }
 
-        public async Task<string[]> SearchForSolutionsAsync(string searchFolder)
+        public async Task<Tuple<string,uint>[]> SearchForSolutionsAsync(string searchFolder)
         {
             return await Task.Run(() =>
             {
-                var rv = new List<string>();
+                var rv = new List<Tuple<string, uint>>();
 
                 var pending = new Stack<string>();
                 pending.Push(searchFolder);
@@ -61,7 +63,10 @@
 
                     foreach (var file in next)
                     {
-                        rv.Add(file);
+                        var crc = CalcCrc(file);
+
+
+                        rv.Add(Tuple.Create(file, crc));
                     }
 
                     try
@@ -80,6 +85,14 @@
 
                 return rv.ToArray();
             }).ConfigureAwait(false);
+        }
+
+        private uint CalcCrc(string file)
+        {
+            using (var stream = File.OpenRead(file))
+            {
+                return _crc.BytesToUint(_crc.ComputeHash(stream));
+            }
         }
     }
 }

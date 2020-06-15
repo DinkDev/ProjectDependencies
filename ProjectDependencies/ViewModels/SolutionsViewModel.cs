@@ -56,7 +56,7 @@
             //dialog.SelectedPath = @"C:\";
             dialog.RootFolder = Environment.SpecialFolder.MyComputer;
 
-            if (dialog.ShowDialog(this.Parent as Window) ?? false)
+            if (dialog.ShowDialog(Parent as Window) ?? false)
             {
                 var searchFolder = dialog.SelectedPath;
 
@@ -118,16 +118,16 @@
             ////LoadSolutionsFromDb();
         }
 
-        private void MergeSolutions(Task<string[]> solutionTask)
+        private void MergeSolutions(Task<Tuple<string, uint>[]> solutionTask)
         {
             var solutions = solutionTask.Result;
 
             Execute.OnUIThread(() =>
             {
                 var currentSolutions = _workingSolutions.Select(s => s.SolutionPath).ToArray();
-                var newSolutions = solutions.Where(s => !currentSolutions.Contains(s));
+                var newSolutions = solutions.Where(s => !currentSolutions.Contains(s.Item1));
 
-                _workingSolutions.AddRange(newSolutions.Select(n => new SolutionFileViewModel(n)));
+                _workingSolutions.AddRange(newSolutions.Select(n => new SolutionFileViewModel(n.Item1, n.Item2)));
 
                 Solutions = CollectionViewSource.GetDefaultView(_workingSolutions);
                 Solutions.SortDescriptions.Add(new SortDescription("Path", ListSortDirection.Ascending));

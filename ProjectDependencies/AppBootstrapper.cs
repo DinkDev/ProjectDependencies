@@ -6,6 +6,7 @@
     using ByteDev.DotNet.Project;
     using ByteDev.DotNet.Solution;
     using Caliburn.Micro;
+    using Model;
     //using DataAccess;
     using Model.SolutionAndProjectParsing;
     using Ookii.Dialogs.Wpf;
@@ -34,6 +35,7 @@
             // resources
             builder.RegisterType<Settings>().As<IFileSettings>() /*.As<IDataAccessSettings>() */
                 .SingleInstance();
+            builder.RegisterType<Crc32>();
             builder.RegisterType<DotNetSolution>().SingleInstance();
             builder.RegisterType<DotNetProject>().SingleInstance();
             builder.RegisterType<SolutionParser>().SingleInstance();

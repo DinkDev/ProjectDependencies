@@ -50,6 +50,11 @@
                                     IsReadOnly="True"
                                     Width="Auto" />
 
+                <DataGridTextColumn Header="Crc"
+                                    Binding="{Binding Path=SolutionCrc, Mode=OneWay}"
+                                    IsReadOnly="True"
+                                    Width="Auto" />
+
             </DataGrid.Columns>
         </DataGrid>
 

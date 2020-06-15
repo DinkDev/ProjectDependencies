@@ -7,6 +7,7 @@
     {
         private readonly string _solutionPath;
         private bool _isSelected;
+        private uint _solutionCrc;
 
         /// <summary>
         /// Load current object and set as selected
@@ -22,12 +23,14 @@
         /// Load new solution file name (not selected)
         /// </summary>
         /// <param name="solutionPath"></param>
-        public SolutionFileViewModel(string solutionPath)
+        public SolutionFileViewModel(string solutionPath, uint solutionCrc)
         {
             _solutionPath = solutionPath;
+            _solutionCrc = solutionCrc;
         }
 
         public string SolutionPath => _solutionPath ?? Wrapped?.SolutionPath ?? @"Error";
+        public uint SolutionCrc => _solutionCrc; // ?? Wrapped?.SolutionCrc ?? @"Error";
 
         public bool IsSelected
         {
@@ -43,7 +46,7 @@
                 }
             }
         }
-        
+
         public SolutionData Wrapped { get; }
 
         public bool IsNew => _solutionPath != null && IsSelected;
